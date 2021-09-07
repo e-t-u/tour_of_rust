@@ -195,7 +195,7 @@
   content_markdown: >
     Hyvää työtä tähän mennessä! Rustin perusteet eivät ole niin pahoja, vai mitä?
     Pääsimme kurkistamaan kuinka Rust-kääntäjä ajattelee.
-    Systeemiohjelmointikielenä Rust on välittää hyvin paljon siitä,
+    Systeemiohjelmointikielenä Rust välittää hyvin paljon siitä,
     kuinka paljon eri arvot kuluttavat muistia, voidaanko arvoja muuttaa, ja
     varmistaa, että laskutoimitukset menevät juuri niin kuin niiden
     kuvitteletkin menevän. Seuraavaksi tutustumme vanhoihin ystäviin:

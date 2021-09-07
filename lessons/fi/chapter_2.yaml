@@ -1,33 +1,33 @@
-- title: Chapter 2 - Basic Control Flow
+- title: Kappale 2 - Perusohjausrakenteet
   content_markdown: >
-    In this chapter let's talk about basic control flow methods in Rust.
+    Tässä kappaleessa tutustutaan Rustin perusohjausrakenteisiin.
 
-    If you are familiar with C based languages you'll feel right at home and
-    maybe
+    Jos tunnet C-pohjaisia ohjelmointikieliä, saatat tuntea olosi
+    kotoisaksi - muutamalla yllätyksellä.
 
-    enjoy a surprise or two.
 - title: if/else
   content_markdown: >
-    Code branching in Rust is not surprising.
+    Haarautuminen Rustissa ei ole yllättävää.
 
 
-    Conditions don't have parentheses! Did we ever really need them? Our logic
-    now looks nice and clean.
+    Ehdoissa ei ole  sulkuja! Tarvitsimmeko niitä koskaan? Logiikka
+    näyttää nyt yksinkertaisemmalta.
 
 
-    All your usual relational and logical operators still work: `==`, `!=`, `<`,
+    Kaikki tutut vertailu- ja loogisetoperaatiot yhä toimivat:
+    `==`, `!=`, `<`,
     `>`, `<=`, `>=`, `!`, `||`, `&&`.
   code: >-
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20let%20x%20%3D%2042%3B%0A%20%20%20%20if%20x%20%3C%2042%20%7B%0A%20%20%20%20%20%20%20%20println!(%22less%20than%2042%22)%3B%0A%20%20%20%20%7D%20else%20if%20x%20%3D%3D%2042%20%7B%0A%20%20%20%20%20%20%20%20println!(%22is%2042%22)%3B%0A%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20println!(%22greater%20than%2042%22)%3B%0A%20%20%20%20%7D%0A%7D
-- title: loop
+- title: silmukat
   content_markdown: |
-    Need an infinite loop?
+    Tavitsetko ikisilmukkaa?
 
-    Rust makes it easy.
+    Rust tekee siitä helpon.
 
-    `break` will escape a loop when you are ready.
+    `break` poistuu silmukasta, kun olet valmis.
 
-    `loop` has a secret we'll talk about soon.
+    `loop`illa on vielä yksi salaisuus, josta kerromme kohta.
   code: >-
     https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&code=fn%20main()%20%7B%0A%20%20%20%20let%20mut%20x%20%3D%200%3B%0A%20%20%20%20loop%20%7B%0A%20%20%20%20%20%20%20%20x%20%2B%3D%201%3B%0A%20%20%20%20%20%20%20%20if%20x%20%3D%3D%2042%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20break%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20println!(%22%7B%7D%22%2C%20x)%3B%0A%7D%0A
 - title: while
