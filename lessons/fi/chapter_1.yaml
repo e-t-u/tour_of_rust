@@ -36,7 +36,7 @@
 
 
     Huomaa, että vaimme sijoittaa samannimiseen muuttujaan monta kertaa.
-    Sitä kutsutaan muuttujan varjostamiseksi, ja muuttujan tyyppi voi muuttua
+    Sitä kutsutaan muuttujan varjostamiseksi. Muuttujan tyyppikin voi muuttua
     myöhemmillä viittauksilla samaan nimeen.
 
 
@@ -67,7 +67,7 @@
     Rustissa on paljon tuttuja tietotyyppejä:
 
 
-    * totuusarvot - `bool` joka edustaa tilaa totta/ei-totta, true/false
+    * totuusarvot - `bool` joka edustaa tilaa totta/ei-totta, *true/false*
 
     * etumerkittömät kokonaisluvut - `u8` `u16` `u32` `u64` `u128`, joihin
     voi sijoittaa vain positiivisia kokonaislukuja
@@ -92,13 +92,13 @@
 
 
     Merkkijonojen käsittely voi olla monimutkaisempaa kuin mihin olet tottunut
-    muissa ohjelmointikielissä;
+    muissa ohjelmointikielissä.
 
     Koska Rust on systeemiohjelmointikieli, se pitää huolta muistin käytöstä enemmän
     kuin mihin olet ehkä tottunut. Palaamme tähän yksityiskohtaan myöhemmin.
 
 
-    Numeerinen tyyppi voidaan tarvittaessa tarkentaa lisäämällä tyyppi
+    Numeron tyyppi voidaan tarvittaessa tarkentaa lisäämällä tyyppi
     numeron perään (esimerkiksi `13u32`, `2u8`).
 - title: Perustietotyypin muunnokset
   code: >-
